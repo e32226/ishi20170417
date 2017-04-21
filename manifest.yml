@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ishi20170417
+  host: ishi20170417
+  disk_quota: 1024M
+  services:
+  - ElephantSQL-sm
+  - Cloudant NoSQL DB-ta
+  - Auto-Scaling-1i
